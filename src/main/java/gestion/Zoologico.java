@@ -1,13 +1,27 @@
 package gestion;
+import java.util.ArrayList;
 
 public class Zoologico {
 	private String nombre;
 	private String ubicacion;
-	private Zona zonas = new Zona();
+	private ArrayList<Zona> zonas = new ArrayList<Zona>();
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		
+	public Zoologico(){}
+	public Zoologico(String nombre, String ubicacion) {
+		this.nombre=nombre;
+		this.ubicacion=ubicacion;
 	}
-
+	
+	
+	public void agregarZonas(Zona Z) {
+		zonas.add(Z);
+	}
+	
+	public int cantidaTotalAnimales() {
+		int contador = 0;
+		for (int i = 0; i < zonas.size(); i ++) {
+			contador += zonas.get(i).cantidadAnimales();
+		}
+		return(contador);
+	}
 }

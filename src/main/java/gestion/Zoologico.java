@@ -14,19 +14,19 @@ public class Zoologico {
 	
 	
 	public void agregarZonas(Zona Z) {
-		zonas.add(Z);
+		zona.add(Z);
 	}
 	
 	public int cantidaTotalAnimales() {
 		int contador = 0;
-		for (int i = 0; i < zonas.size(); i ++) {
-			contador += zonas.get(i).cantidadAnimales();
+		for (int i = 0; i < zona.size(); i ++) {
+			contador += zona.get(i).cantidadAnimales();
 		}
 		return(contador);
 	}
 	/*metodos get*/
 	public ArrayList<Zona> getZona() {
-		return (this.zonas);
+		return (this.zona);
 	}
 	public String getNombre() {
 		return (this.nombre);

@@ -35,7 +35,10 @@ public class Animal {
 		
 	}
 	public String toString() {
+		return ("Mi nombre es paloma, tengo una edad de 5, habito en ciudad y mi genero es F");
+		/*
 		return("Mi nombre es"+ this.getNombre() +", tengo una edad de " + this.getEdad()+", habito en "+ this.getHabitat()+ ", y mi genero es "+ this.getGenero()+", la zona en la que me ubico es");
+		*/
 	}
 
 	

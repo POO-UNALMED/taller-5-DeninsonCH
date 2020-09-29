@@ -1,6 +1,6 @@
 package zooAnimales;
 
-import gestion.Zona;
+import gestion.*;
 
 public class Anfibio extends Animal {
 	 private Anfibio[] listado;

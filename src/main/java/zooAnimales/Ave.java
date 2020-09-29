@@ -1,6 +1,6 @@
 package zooAnimales;
 
-import gestion.Zona;
+import gestion.*;
 
 public class Ave extends Animal {
 	private Ave[] listado;

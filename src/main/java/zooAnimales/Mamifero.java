@@ -1,6 +1,6 @@
 package zooAnimales;
 
-import gestion.Zona;
+import gestion.*;
 
 public class Mamifero extends Animal {
 	private Mamifero[] listado;

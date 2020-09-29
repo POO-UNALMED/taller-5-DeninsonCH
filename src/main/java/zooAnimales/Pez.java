@@ -20,8 +20,8 @@ public class Pez extends Animal {
 		this.cantidadAletas=ca;
 	}
 	/*metodos*/
-	public int cantidadPez() {
-		return(this.salmones+this.bacalaos);
+	public static int cantidadPez() {
+		return(salmones+bacalaos);
 	}
 	public String movimiento() {
 		return("nadar");

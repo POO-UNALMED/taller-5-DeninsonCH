@@ -22,8 +22,8 @@ public class Reptil extends Animal {
 	}
 	
 	/*metodos*/
-	public int cantidadReptiles() {
-		return(this.iguanas+this.serpientes);
+	public static int cantidadReptiles() {
+		return(iguanas+serpientes);
 	}
 	public String movimiento() {
 		return("reptar");

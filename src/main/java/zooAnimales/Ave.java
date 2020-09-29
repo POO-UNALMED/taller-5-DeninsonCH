@@ -19,8 +19,8 @@ public class Ave extends Animal {
 		tAves ++;
 		}
 	/*metodos*/
-	public int cantidadAves() {
-		return(this.halcones+this.aguilas);
+	public static int cantidadAves() {
+		return(halcones+aguilas);
 	}
 	public String movimiento() {
 		return("volar");

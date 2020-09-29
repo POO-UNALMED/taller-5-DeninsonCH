@@ -30,13 +30,14 @@ public class Animal {
 	public String movimiento() {
 		return("desplazarse");
 	}
-	public static String totalPorTipo()  {
+	
+	public String totalPorTipo()  {
 		
-		return("Mamiferos: "+ tMamiferos + "\n" + 
-				"Aves: " + tAves +  "\n" +
-				"Reptiles: "+ tReptiles + "\n" +
-				"\nPeces : " + tPeces + "\n" +
-				"\nAnfibios: " + tAnfibios);
+		return("Mamiferos: "+ Mamifero.cantidadMamiferos()+ "\n" + 
+				"Aves: " + Ave.cantidadAves() +  "\n" +
+				"Reptiles: "+ Reptil.cantidadReptiles() + "\n" +
+				"\nPeces : " + Pez.cantidadPez() + "\n" +
+				"\nAnfibios: " + Anfibio.cantidadAnfibios());
 		
 	}
 	@Override

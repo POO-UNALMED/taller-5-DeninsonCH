@@ -29,6 +29,10 @@ public class Zona {
 	public Zoologico getZoo() {
 		return (this.zoo);
 	}
+
+	public void setZoo(Zoologico zoo) {
+		this.zoo = zoo;
+	}
 	public String getNombre() {
 		return(this.nombre);
 	}

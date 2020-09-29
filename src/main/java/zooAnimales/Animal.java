@@ -50,7 +50,6 @@ public class Animal {
         return "Mi nombre es "+this.getNombre()+", tengo una edad de "+this.getEdad()+", habito en "+this.getHabitat()+" y mi genero es "+ this.getGenero();
     }
 
-	
 	/*entrada de datos desde otras clases*/
 	public void setnombre(String sn) {
 		this.nombre=sn;

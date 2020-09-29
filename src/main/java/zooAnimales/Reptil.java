@@ -4,32 +4,39 @@ import gestion.Zona;
 
 public class Reptil extends Animal {
 	private Reptil[] listado;
-	public int iguanas;
-	public int serpientes;
+	public static int iguanas;
+	public static int serpientes;
 	private String colorEscamas;
 	private int largoCola;
 	
 	/*constructores*/
-	public Reptil() {}
-	public Reptil(String nombre, int edad, String habitat, String genero, Zona zona) {
+	public Reptil() {tReptiles ++;}
+	public Reptil(String nombre, int edad, String habitat, String genero, String cs, int lc) {
 		this.setnombre(nombre);
 		this.setedad(edad);
 		this.sethabitat(habitat);
 		this.setgenero(genero);	
+		this.colorEscamas=cs;
+		this.largoCola=lc;
+		tReptiles ++;
 	}
 	
 	/*metodos*/
 	public int cantidadReptiles() {
-		return(listado.length);
+		return(this.iguanas+this.serpientes);
 	}
 	public String movimiento() {
 		return("reptar");
 	}
-	public void creariguana() {
-		
+	public static Reptil crearIguana(String nombre, int edad, String genero) {	
+		Reptil i = new Reptil (nombre, edad, "humedal", genero, "verde", 3);
+		iguanas ++;
+		return (i);
 	}
-	public void crearserpiente() {
-		
+	public static Reptil crearSerpiente(String nombre, int edad, String genero) {
+		Reptil s = new Reptil (nombre, edad, "jungla", genero, "blanco", 3);
+		serpientes ++;
+		return (s);
 	}
 	
 	

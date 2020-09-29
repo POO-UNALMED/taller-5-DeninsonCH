@@ -4,29 +4,35 @@ import gestion.Zona;
 
 public class Ave extends Animal {
 	private Ave[] listado;
-	public int halcones;
-	public int aguilas;
+	public static int halcones;
+	public static int aguilas;
 	private String colorPlumas;
 	
 	/*constructor*/
-	public Ave() {}
-	public Ave(String nombre, int edad, String habitat, String genero, Zona zona) {
+	public Ave() {tAves ++;}
+	public Ave(String nombre, int edad, String habitat, String genero, String cp) {
 		this.setnombre(nombre);
 		this.setedad(edad);
 		this.sethabitat(habitat);
-		this.setgenero(genero); 	
+		this.setgenero(genero); 
+		this.colorPlumas=cp;
+		tAves ++;
 		}
 	/*metodos*/
 	public int cantidadAves() {
-		return(listado.length);
+		return(this.halcones+this.aguilas);
 	}
 	public String movimiento() {
 		return("volar");
 	}
-	public void crearHalcon() {
-		
+	public static Ave crearHalcon(String nombre, int edad, String genero) {
+		Ave h = new Ave (nombre, edad, "montanas", genero, "cafe glorioso");
+		halcones ++;
+		return (h);
 	}
-	public void crearAguila() {
-		
+	public static Ave crearAguila(String nombre, int edad, String genero) {
+		Ave a = new Ave (nombre, edad, "montanas", genero, "blanco y amarillo");
+		aguilas ++;
+		return (a);
 	}
 }

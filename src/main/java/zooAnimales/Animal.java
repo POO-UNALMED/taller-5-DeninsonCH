@@ -38,12 +38,13 @@ public class Animal {
 	@Override
 	public String toString() {
 		if(zona==null) {
-			return("Mi nombre es"+ this.getNombre() +", tengo una edad de " + this.getEdad()+", habito en "+ this.getHabitat()+ ", y mi genero es "+ this.getGenero());
+			String z="Mi nombre es "+this.getNombre()+", tengo una edad de " +this.edad+", habito en "+this.getHabitat()+" y mi genero es "+this.getGenero();
+			return z;
 		}
 		else {
-			return("Mi nombre es"+ this.getNombre() +", tengo una edad de " + this.getEdad()+", habito en "+ this.getHabitat()+ ", y mi genero es "+ this.getGenero()+", la zona en la que me ubico es "+this.getZona()+", en el "+this.zona.getZoo());
+			String z="Mi nombre es "+this.getNombre()+", tengo una edad de " +this.edad+", habito en "+this.getHabitat()+" y mi genero es "+this.getGenero()+", la zona en la que me ubico es "+this.getZona()+", en el "+this.zona.getZoo();
+			return z;
 		}
-		
 	}
 
 	

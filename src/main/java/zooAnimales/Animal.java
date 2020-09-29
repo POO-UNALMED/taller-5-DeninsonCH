@@ -81,5 +81,28 @@ public class Animal {
 	public Zona getZona() {
 		return zona;
 	}
+
+	public static int getTotalAnimales() {
+		return totalAnimales;
+	}
+	public static void setTotalAnimales(int totalAnimales) {
+		Animal.totalAnimales = totalAnimales;
+	}
+	
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	
+	public void setEdad(int edad) {
+		this.edad = edad;
+	}
+	
+	public void setGenero(String genero) {
+		this.genero = genero;
+	}
+	
+	public void setHabitat(String habitat) {
+		this.habitat = habitat;
+	}
 	
 }

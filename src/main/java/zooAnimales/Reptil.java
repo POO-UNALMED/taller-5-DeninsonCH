@@ -1,6 +1,6 @@
 package zooAnimales;
 
-import gestion.Zona;
+import gestion.*;
 
 public class Reptil extends Animal {
 	private Reptil[] listado;
@@ -44,5 +44,13 @@ public class Reptil extends Animal {
 	}
 	public int getLargoCola() {
 		return (this.largoCola);
+	}
+	
+	public void setColorEscamas(String colorEscamas) {
+		this.colorEscamas = colorEscamas;
+	}
+	
+	public void setLargoCola(int largoCola) {
+		this.largoCola = largoCola;
 	}
 }

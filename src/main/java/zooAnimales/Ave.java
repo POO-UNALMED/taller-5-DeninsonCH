@@ -9,7 +9,7 @@ public class Ave extends Animal {
 	private String colorPlumas;
 	
 	/*constructor*/
-	public Ave() {}
+	public Ave() {tAves ++;}
 	public Ave(String nombre, int edad, String habitat, String genero, String cp) {
 		this.setnombre(nombre);
 		this.setedad(edad);
@@ -19,8 +19,8 @@ public class Ave extends Animal {
 		tAves ++;
 		}
 	/*metodos*/
-	public static int cantidadAves() {
-		return(halcones+aguilas);
+	public int cantidadAves() {
+		return(this.halcones+this.aguilas);
 	}
 	public String movimiento() {
 		return("volar");

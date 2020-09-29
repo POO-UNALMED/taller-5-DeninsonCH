@@ -10,7 +10,7 @@ public class Pez extends Animal {
 	private int cantidadAletas;
 	
 	/*contructores*/
-	public Pez() {}
+	public Pez() {tPeces ++;}
 	public Pez(String nombre, int edad, String habitat, String genero, String ce, int ca ) {
 		this.setnombre(nombre);
 		this.setedad(edad);
@@ -20,8 +20,8 @@ public class Pez extends Animal {
 		this.cantidadAletas=ca;
 	}
 	/*metodos*/
-	public static int cantidadPez() {
-		return(salmones+bacalaos);
+	public int cantidadPez() {
+		return(this.salmones+this.bacalaos);
 	}
 	public String movimiento() {
 		return("nadar");

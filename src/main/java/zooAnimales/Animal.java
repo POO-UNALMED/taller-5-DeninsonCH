@@ -18,19 +18,20 @@ public class Animal {
 	
 	/*contructores*/
 	public Animal() {}
-	public Animal(String nombre, int edad, String habitat, String genero, Zona zona) {
+	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre=nombre;
 		this.edad=edad;
 		this.habitat=habitat;
 		this.genero=genero;
-		this.zona=zona;
+		
+		
 	}
 	/*Metodos*/
 	public String movimiento() {
 		return("desplazarse");
 	}
 	public static String totalPorTipo()  {
-		return("Mamiferos "+ tMamiferos + "\nAves " + tAves + "\nReptiles" + tReptiles + "\nPeces" + tPeces + "\nAnfibios" + tAnfibios);
+		return("Mamiferos: "+ tMamiferos + "\nAves :" + tAves + "\nReptiles :" + tReptiles + "\nPeces :" + tPeces + "\nAnfibios :" + tAnfibios);
 		
 	}
 	public String toString() {

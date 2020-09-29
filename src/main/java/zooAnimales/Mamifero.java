@@ -16,6 +16,9 @@ public class Mamifero extends Animal {
 		this.setedad(edad);
 		this.sethabitat(habitat);
 		this.setgenero(genero);	
+		this.pelaje=pelaje;
+		this.patas=patas;
+		tMamiferos ++;
 	}
 
 	

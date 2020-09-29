@@ -39,5 +39,13 @@ public class Anfibio extends Animal {
 			return (s);
 
 		}
+		
+	/*metodos get*/
+		public String getColorPiel() {
+			return (this.colorPiel);
+		}		
+		public boolean isVenenoso() {
+			return (this.venenoso);
+		}
 	 
 }

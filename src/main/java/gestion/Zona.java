@@ -24,5 +24,12 @@ public class Zona {
 	public int cantidadAnimales() {
 		return animales.size();
 	}
-	
+	/*metodos get*/
+
+	public Zoologico getZoo() {
+		return (this.zoo);
+	}
+	public String getNombre() {
+		return(this.nombre);
+	}
 }

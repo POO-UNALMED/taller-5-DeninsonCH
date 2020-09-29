@@ -38,6 +38,11 @@ public class Reptil extends Animal {
 		serpientes ++;
 		return (s);
 	}
-	
-	
+	/*metodos get*/
+	public String getColorEscamas() {
+		return (this.colorEscamas);
+	}
+	public int getLargoCola() {
+		return (this.largoCola);
+	}
 }

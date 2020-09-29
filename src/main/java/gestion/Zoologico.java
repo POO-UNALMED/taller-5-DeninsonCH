@@ -24,4 +24,11 @@ public class Zoologico {
 		}
 		return(contador);
 	}
+	/*metodos get*/
+	public ArrayList<Zona> getZona() {
+		return (this.zonas);
+	}
+	public String getNombre() {
+		return (this.nombre);
+	}
 }

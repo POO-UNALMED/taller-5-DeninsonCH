@@ -36,4 +36,11 @@ public class Pez extends Animal {
 		bacalaos ++;
 		return (b);
 	}
+	/*metodos get*/
+	public String getColorEscamas() {
+		return (this.colorEscamas);
+	}
+	public int getCantidadAletas() {
+		return (this.cantidadAletas);
+	}
 }

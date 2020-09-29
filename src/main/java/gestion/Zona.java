@@ -32,4 +32,14 @@ public class Zona {
 	public String getNombre() {
 		return(this.nombre);
 	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public void setAnimales(ArrayList<Animal> animales) {
+		this.animales = animales;
+	}
+	public ArrayList<Animal> getAnimales() {
+		return animales;
+	}
+	
 }

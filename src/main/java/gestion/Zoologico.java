@@ -31,4 +31,18 @@ public class Zoologico {
 	public String getNombre() {
 		return (this.nombre);
 	}
+	
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public String getUbicacion() {
+		return ubicacion;
+	}
+	public void setUbicacion(String ubicacion) {
+		this.ubicacion = ubicacion;
+	}
+	
+	public void setZonas(ArrayList<Zona> zonas) {
+		this.zonas = zonas;
+	}
 }

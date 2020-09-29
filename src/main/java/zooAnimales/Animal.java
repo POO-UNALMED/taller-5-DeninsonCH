@@ -30,9 +30,9 @@ public class Animal {
 	public String movimiento() {
 		return("desplazarse");
 	}
-	public static boolean totalPorTipo()  {
+	public static String totalPorTipo()  {
 		
-		return(true);
+		return("Mamiferos: "+ tMamiferos + "\nAves :" + tAves + "\nReptiles :" + tReptiles + "\nPeces :" + tPeces + "\nAnfibios :" + tAnfibios);
 		
 	}
 	@Override

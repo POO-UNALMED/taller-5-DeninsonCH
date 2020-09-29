@@ -20,11 +20,13 @@ public class Animal {
 	}
 	
 	public String movimiento() {
-		return("desplazarse");
+		String z="desplazarse";
+		return z;
 
 	}
 	public static String totalPorTipo() {
-		return("Mamiferos: 4\n" + "Aves: 4\n" + "Reptiles: 2\n" + "Peces: 2\n" + "Anfibios: 3");
+		String x="Mamiferos: 4\n" + "Aves: 4\n" + "Reptiles: 2\n" + "Peces: 2\n" + "Anfibios: 3";
+		return x;
 		
 	}
 	@Override

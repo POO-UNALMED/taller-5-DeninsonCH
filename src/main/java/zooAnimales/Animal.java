@@ -1,5 +1,6 @@
 package zooAnimales;
 import gestion.*;		/*me permite la conexion entre las clases de distintos paquetes*/
+import java.util.List;
 
 public class Animal {
 	private static int totalAnimales;
@@ -7,7 +8,7 @@ public class Animal {
 	private int edad;
 	private String habitat;
 	private String genero;
-	private Zona zona;
+	private List<Zona> zona;
 	
 	/*atributos por tipo*/
 	public static int tMamiferos;

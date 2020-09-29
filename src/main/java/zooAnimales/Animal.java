@@ -32,7 +32,11 @@ public class Animal {
 	}
 	public static String totalPorTipo()  {
 		
-		return("Mamiferos: "+ tMamiferos + "\nAves :" + tAves + "\nReptiles :" + tReptiles + "\nPeces :" + tPeces + "\nAnfibios :" + tAnfibios);
+		return("Mamiferos: "+ tMamiferos + "\n" + 
+				"Aves: " + tAves +  "\n" +
+				"Reptiles: "+ tReptiles + "\n" +
+				"\nPeces : " + tPeces + "\n" +
+				"\nAnfibios: " + tAnfibios);
 		
 	}
 	@Override

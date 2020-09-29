@@ -7,6 +7,10 @@ public class Zona {
 	private Zoologico zoo = new Zoologico();
 	private ArrayList<Animal> animales = new ArrayList<Animal>(); 
 	
+	
+	
+	
+	
 	/*constructores*/
 	public Zona() {}
 	public Zona(String nombre, Zoologico zoo) {

@@ -22,7 +22,7 @@ public class Pez extends Animal {
 		return(listado.length);
 	}
 	public String movimiento() {
-		return("volar");
+		return("nadar");
 	}
 	public void crearsalmon() {
 		

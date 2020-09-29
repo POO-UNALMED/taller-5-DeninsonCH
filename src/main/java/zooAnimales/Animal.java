@@ -9,6 +9,13 @@ public class Animal {
 	private String genero;
 	private Zona zona = new Zona();
 	
+	/*atributos por tipo*/
+	public static int tMamiferos;
+	public static int tAves;
+	public static int tReptiles;
+	public static int tPeces;
+	public static int tAnfibios;
+	
 	/*contructores*/
 	public Animal() {}
 	public Animal(String nombre, int edad, String habitat, String genero, Zona zona) {
@@ -20,14 +27,14 @@ public class Animal {
 	}
 	/*Metodos*/
 	public String movimiento() {
-		
+		return("desplazarse");
 	}
-	public int totalPorTipo() {
-		
+	public static String totalPorTipo()  {
+		return("Mamiferos "+ tMamiferos + "\nAves " + tAves + "\nReptiles" + tReptiles + "\nPeces" + tPeces + "\nAnfibios" + tAnfibios);
 		
 	}
 	public String toString() {
-		
+		return("Mi nombre es"+ this.getNombre() +", tengo una edad de " + this.getEdad()+", habito en "+ this.getHabitat()+ ", y mi genero es "+ this.getGenero()+", la zona en la que me ubico es");
 	}
 
 	
@@ -44,5 +51,19 @@ public class Animal {
 	public void setgenero(String g) {
 		this.genero=g;
 	}
+	
+	public String getNombre() {
+		return (this.nombre);
+	}
+	public String getHabitat() {
+		return (this.habitat);
+	}
+	public String getGenero() {
+		return (this.genero);
+	}
+	public int getEdad() {
+		return (this.edad);
+	}
+	
 	
 }

@@ -23,7 +23,7 @@ public class Reptil extends Animal {
 		return(listado.length);
 	}
 	public String movimiento() {
-		return("volar");
+		return("reptar");
 	}
 	public void creariguana() {
 		

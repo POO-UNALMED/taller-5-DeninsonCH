@@ -23,7 +23,7 @@ public class Anfibio extends Animal {
 		 return(listado.length);
 	 }
 	 public String movimiento() {
-			return("volar");
+			return("saltar");
 	 }
 	 public void crearsalmon() {
 			

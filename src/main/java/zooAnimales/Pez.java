@@ -10,7 +10,7 @@ public class Pez extends Animal {
 	private int cantidadAletas;
 	
 	/*contructores*/
-	public Pez() {tPeces ++;}
+	public Pez() {}
 	public Pez(String nombre, int edad, String habitat, String genero, String ce, int ca ) {
 		this.setnombre(nombre);
 		this.setedad(edad);

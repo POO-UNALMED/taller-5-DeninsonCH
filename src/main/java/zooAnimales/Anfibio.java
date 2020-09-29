@@ -10,7 +10,7 @@ public class Anfibio extends Animal {
 	 private boolean venenoso;
 	 
 	 /*constructures*/
-	 public Anfibio() {tAnfibios ++;}
+	 public Anfibio() {}
 	 public Anfibio(String nombre, int edad, String habitat, String genero, String cp, boolean v) {
 			this.setnombre(nombre);
 			this.setedad(edad);

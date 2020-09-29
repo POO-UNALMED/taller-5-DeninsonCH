@@ -17,13 +17,13 @@ public class Animal {
 	public static int tAnfibios;
 	
 	/*contructores*/
-	public Animal() {}
+	public Animal() {totalAnimales++;}
 	public Animal(String nombre, int edad, String habitat, String genero) {
 		this.nombre=nombre;
 		this.edad=edad;
 		this.habitat=habitat;
 		this.genero=genero;
-		
+		totalAnimales++;
 		
 	}
 	/*Metodos*/
@@ -34,11 +34,15 @@ public class Animal {
 		return("Mamiferos: "+ tMamiferos + "\nAves :" + tAves + "\nReptiles :" + tReptiles + "\nPeces :" + tPeces + "\nAnfibios :" + tAnfibios);
 		
 	}
+	@Override
 	public String toString() {
-		return ("Mi nombre es paloma, tengo una edad de 5, habito en ciudad y mi genero es F");
-		/*
-		return("Mi nombre es"+ this.getNombre() +", tengo una edad de " + this.getEdad()+", habito en "+ this.getHabitat()+ ", y mi genero es "+ this.getGenero()+", la zona en la que me ubico es");
-		*/
+		if(zona==null) {
+			return("Mi nombre es"+ this.getNombre() +", tengo una edad de " + this.getEdad()+", habito en "+ this.getHabitat()+ ", y mi genero es "+ this.getGenero());
+		}
+		else {
+			return("Mi nombre es"+ this.getNombre() +", tengo una edad de " + this.getEdad()+", habito en "+ this.getHabitat()+ ", y mi genero es "+ this.getGenero()+", la zona en la que me ubico es "+this.getZona()+", en el "+this.zona.getZoo());
+		}
+		
 	}
 
 	
@@ -55,9 +59,16 @@ public class Animal {
 	public void setgenero(String g) {
 		this.genero=g;
 	}
+	public void setZona(Zona zona) {
+		this.zona = zona;
+	}
 	
+	/*metodos get*/
 	public String getNombre() {
 		return (this.nombre);
+	}
+	public int getEdad() {
+		return edad;
 	}
 	public String getHabitat() {
 		return (this.habitat);
@@ -65,9 +76,9 @@ public class Animal {
 	public String getGenero() {
 		return (this.genero);
 	}
-	public int getEdad() {
-		return (this.edad);
-	}
 	
+	public Zona getZona() {
+		return zona;
+	}
 	
 }

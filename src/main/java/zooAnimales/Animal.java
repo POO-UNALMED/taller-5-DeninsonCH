@@ -31,11 +31,9 @@ public class Animal {
 		return("desplazarse");
 	}
 	public static String totalPorTipo()  {
-		String x="Mamiferos: 4\n" + "Aves: 4\n" + "Reptiles: 2\n" + "Peces: 2\n" + "Anfibios: 3";
-		return x;
-		/*
+		
 		return("Mamiferos: "+ tMamiferos + "\nAves :" + tAves + "\nReptiles :" + tReptiles + "\nPeces :" + tPeces + "\nAnfibios :" + tAnfibios);
-		*/
+		
 	}
 	@Override
 	public String toString() {
